@@ -62,6 +62,20 @@ extern data_t data;
 int process_line(stack_t **stack);
 void add_dnodeint(stack_t **stack, unsigned int line_number);
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
-
+void push_error(short int err_code);
+void free_data(void);
+void print_dlistint(stack_t **stack, unsigned int line_number);
+void free_dlistint(stack_t *stack);
+int split_line(void);
+void print_top(stack_t **stack, unsigned int line_number);
+void pop_top(stack_t **stack, unsigned int line_number);
+void swap_top(stack_t **stack, unsigned int line_number);
+int _isdigit(char *str);
+void nothing(stack_t **stack, unsigned int line_number);
+void add_top_two(stack_t **stack, unsigned int line_number);
+void sub_top_two(stack_t **stack, unsigned int line_number);
+void div_top_two(stack_t **stack, unsigned int line_number);
+void mul_top_two(stack_t **stack, unsigned int line_number);
+void mod_top_two(stack_t **stack, unsigned int line_number);
 
 #endif
