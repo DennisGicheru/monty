@@ -37,11 +37,63 @@ void get_error_1(short int err_code)
 		    fprintf(stderr, "L%d: can't pop an empty stack\n", data.line_number);
 		    free_data();
 		    break;
-	    case 19:
+	    case 18:
 		    fprintf(stderr, "L%d: can't swap, stack too short\n", data.line_number);
 		    free_data();
 		    break;
         default:
 		    break;
     }
+}
+/**
+ * get_error_2 - gets error
+ * @err_code: error code
+ *
+ * Return: void
+ */
+void get_error_2(short int err_code)
+{
+	switch (err_code)
+	{
+	case 20:
+		fprintf(stderr, "L%d: can't add, stack too short\n", data.line_number);
+		free_data();
+		break;
+	case 21:
+		fprintf(stderr, "L%d: can't sub, stack too short\n", data.line_number);
+		free_data();
+		break;
+	case 22:
+		fprintf(stderr, "L%d: can't div, stack too short\n", data.line_number);
+		free_data();
+		break;
+	case 23:
+		fprintf(stderr, "L%d: division by zero\n", data.line_number);
+		free_data();
+		break;
+	case 24:
+		fprintf(stderr, "L%d: can't mul, stack too short\n", data.line_number);
+		free_data();
+		break;
+	case 25:
+		fprintf(stderr, "L%d: can't mod, stack too short\n", data.line_number);
+		free_data();
+		break;
+	default:
+		break;
+	}
+}
+/**
+ * push_error - pushs errors
+ * @err_code: error code
+ *
+ * Return: void
+ */
+void push_error(short int err_code)
+{
+	if (err_code >= 10 && err_code < 20)
+		get_error_1(err_code);
+	else if (err_code >= 20 && err_code < 30)
+		get_error_2(err_code);
+	exit(EXIT_FAILURE);
 }
