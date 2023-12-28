@@ -59,7 +59,9 @@ typedef struct instance_s
 extern data_t data;
 
 /*OTHER PROTOTYPES*/
-
+int process_line(stack_t **stack);
+void add_dnodeint(stack_t **stack, unsigned int line_number);
+void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size);
 
 
 #endif

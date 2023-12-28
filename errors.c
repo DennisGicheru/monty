@@ -25,5 +25,23 @@ void get_error_1(short int err_code)
                 data.line_number, data.args[0]);
             free_data();
             break;
+        case 15:
+        	fprintf(stderr, "L%d: usage: push integer\n", data.line_number);
+		    free_data();
+		    break;
+	    case 16:
+		    fprintf(stderr, "L%d: can't pint, stack empty\n", data.line_number);
+		    free_data();
+		    break;
+	    case 17:
+		    fprintf(stderr, "L%d: can't pop an empty stack\n", data.line_number);
+		    free_data();
+		    break;
+	    case 19:
+		    fprintf(stderr, "L%d: can't swap, stack too short\n", data.line_number);
+		    free_data();
+		    break;
+        default:
+		    break;
     }
 }
