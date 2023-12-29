@@ -5,21 +5,21 @@
  * @a: given array
  * @el: given element
  * @len: length of the array
- * 
+ *
  * Return: pointer to filled array
 */
 void *fill_an_array(void *a, int el, unsigned int len)
 {
-    char *p = a;
-    unsigned int i = 0;
+char *p = a;
+unsigned int i = 0;
 
-    while (i < len)
-    {
-        *p = el;
-        p++;
-        i++;
-    }
-    return (a);
+while (i < len)
+{
+*p = el;
+p++;
+i++;
+}
+return (a);
 }
 
 /**

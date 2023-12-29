@@ -1,8 +1,7 @@
 #define _GNU_SOURCE
 #include "monty.h"
-
 /**
- * data - create global variable data
+ * data - global variable data
 */
 data_t data;
 
