@@ -15,8 +15,11 @@ void add_dnodeint(stack_t **stack,
 	if (new_node == NULL)
 		push_error(11);
 	if (_isdigit(data.args[1]) > 0)
+{
 		push_error(15);
-exit(EXIT_FAILURE);
+		fclose(data.fp);
+		exit(EXIT_FAILURE);
+}
 	new_node->n = atoi(data.args[1]);
 	if (*stack == NULL)
 	{
