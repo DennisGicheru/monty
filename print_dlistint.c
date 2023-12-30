@@ -6,8 +6,7 @@
  *
  * Return: void
  */
-void
-print_dlistint(stack_t **stack,
+void print_dlistint(stack_t **stack,
 	unsigned int line_number __attribute__((unused)))
 {
 	stack_t *cursor;
