@@ -76,4 +76,5 @@ void sub_top_two(stack_t **stack, unsigned int line_number);
 void div_top_two(stack_t **stack, unsigned int line_number);
 void mul_top_two(stack_t **stack, unsigned int line_number);
 void mod_top_two(stack_t **stack, unsigned int line_number);
+void f_pchar(stack_t **head, unsigned int counter);
 #endif
