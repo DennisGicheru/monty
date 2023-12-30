@@ -12,6 +12,8 @@ void print_dlistint(stack_t **stack,
 	stack_t *cursor;
 
 	cursor = *stack;
+	if (cursor == NULL)
+		return;
 	while (cursor)
 	{
 		printf("%d\n", cursor->n);
