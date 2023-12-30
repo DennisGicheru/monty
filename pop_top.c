@@ -12,7 +12,7 @@ void pop_top(stack_t **stack,
 	stack_t *tmp;
 
 	if (*stack == NULL)
-		push_error(18);
+		push_error(17);
 	if ((*stack)->next == NULL)
 	{
 		free(*stack);

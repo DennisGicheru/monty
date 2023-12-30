@@ -32,6 +32,6 @@ int process_line(stack_t **stack)
 		}
 		i++;
 	}
-	push_error(15);
+	push_error(14);
 	return (1);
 }
