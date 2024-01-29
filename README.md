@@ -1,4 +1,4 @@
-# The monty program
+#The monty program
 
 The goal of this project is to create an interpreter for Monty ByteCodes files
 Usage: monty file
